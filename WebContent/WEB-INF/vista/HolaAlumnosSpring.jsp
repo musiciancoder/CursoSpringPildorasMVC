@@ -9,5 +9,10 @@
 </head>
 <body>
 Hola ${param.nombreAlumno}. Bienvenido al curso de Spring
+<p><br>
+<h2>Atención a todos</h2>
+<!-- recupera los datos del modelo -->
+${mensajeClaro}
+</p>
 </body>
 </html>
