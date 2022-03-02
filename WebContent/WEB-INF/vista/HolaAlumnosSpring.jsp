@@ -1,5 +1,6 @@
+<!-- Esto es lo que se devuelve al procesar -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Primer ejemplo de MVC con Spring</h1>
-	<a href="muestraFormulario">Ir al formulario</a>
+Hola ${param.nombreAlumno}. Bienvenido al curso de Spring
 </body>
 </html>
