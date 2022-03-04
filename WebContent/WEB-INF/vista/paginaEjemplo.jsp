@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>Primer ejemplo de MVC con Spring</h1>
-	<a href="muestraFormulario">Ir al formulario</a>
+	<a href="secundario/muestraFormulario">Ir al formulario</a>
 </body>
 </html>
