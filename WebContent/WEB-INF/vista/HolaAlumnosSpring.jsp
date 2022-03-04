@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/recursos/estilos/miestilo.css">
 </head>
 <body>
-Hola ${param.nombreAlumno}. Bienvenido al curso de Spring
+Hola ${param.nombreAlumno}. <br> Bienvenido al curso de Spring
 <p><br>
 <h2>Atención a todos</h2>
 <!-- recupera los datos del modelo -->
