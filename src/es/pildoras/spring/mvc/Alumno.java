@@ -1,7 +1,8 @@
 package es.pildoras.spring.mvc;
 
+
+//Esto es un bean!!!
 public class Alumno {
-	
 	
 	
 	public String getNombre() {
@@ -19,9 +20,23 @@ public class Alumno {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	
+	
+
+	public String getOptativa() {
+		return optativa;
+	}
+
+	public void setOptativa(String optativa) {
+		this.optativa = optativa;
+	}
+
+
 
 	private String nombre;
 	
 	private String apellido;
+	
+	private String optativa;
 
 }

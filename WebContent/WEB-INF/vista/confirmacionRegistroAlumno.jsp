@@ -7,6 +7,7 @@
 <title>Confirmacion Registro</title>
 </head>
 <body>
- <h1> El alumno con nombre ${elAlumno.nombre} y apellido ${elAlumno.apellido} se registro con exito</h1>
+ <h1> El alumno con nombre ${elAlumno.nombre} y apellido ${elAlumno.apellido} 
+ se registro con exito. Las asignaturas: ${elAlumno.optativa} </h1>
 </body>
 </html>
