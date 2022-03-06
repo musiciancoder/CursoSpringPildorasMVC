@@ -2,6 +2,7 @@ package es.pildoras.spring.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -17,5 +18,13 @@ public class AlumnoController {
 		
 		return "alumnoRegistroFormulario";
 	}
+	
+	@RequestMapping("/procesarFormulario")
+	public String procesarFormulario(@ModelAttribute ("elAlumno") Alumno elAlumno) { //con @ModelAttribute se rescata un objeto que ya estaba en el modelo 
+		
+		return "confirmacionRegistroAlumno" ;
+	}
+	
+	
 
 }
