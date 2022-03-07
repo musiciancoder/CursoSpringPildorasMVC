@@ -8,6 +8,8 @@
 </head>
 <body>
  <h1> El alumno con nombre ${elAlumno.nombre} y apellido ${elAlumno.apellido} 
- se registro con exito. Las asignaturas: ${elAlumno.optativa} </h1>
+ se registro con exito. Las asignaturas: ${elAlumno.optativa}.
+ La ciudad donde comenzará los estudios el amumno es: ${elAlumno.ciudadEstudios}.
+ Los idiomas del alumno son: ${elAlumno.idiomasAlumno}</h1>
 </body>
 </html>

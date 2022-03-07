@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form:form action="procesarFormulario" modelAttribute="elAlumno">
-		<!-- path="nombre" llama a getNombre de la clase alumno  -->
+		<!-- path="nombre" llama a setNombre de la clase alumno  -->
 Nombre:<form:input path="nombre" />
 		<br>
 		<br>
@@ -26,6 +26,17 @@ Apellido:<form:input path="apellido" />
 		</form:select>
 		<br>
 		<br>
+		Barcelona:<form:radiobutton path="ciudadEstudios" value="Barcelona" />
+		Madrid:<form:radiobutton path="ciudadEstudios" value="Madrid" />
+		Valencia:<form:radiobutton path="ciudadEstudios" value="Valencia" />
+		Bilbao:<form:radiobutton path="ciudadEstudios" value="Bilbao" />
+		<br>
+		<br>
+		<br>
+		Ingles:<form:checkbox path="idiomasAlumno" value="Inglés" />
+			Frances:<form:checkbox path="idiomasAlumno" value="Frances" />
+				Aleman:<form:checkbox path="idiomasAlumno" value="Aleman" />
+					Chino:<form:checkbox path="idiomasAlumno" value="Chino" />
 		<input type="submit" value="enviar">
 	</form:form>
 </body>
