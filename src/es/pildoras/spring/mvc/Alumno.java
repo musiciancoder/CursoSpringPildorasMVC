@@ -1,10 +1,17 @@
 package es.pildoras.spring.mvc;
 
+import org.hibernate.validator.constraints.Email;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 //Esto es un bean!!!
 public class Alumno {
 	
-	
+	@NotNull
+	@Size(min=2,message="Campo requerido de minimo dos letras")
 	public String getNombre() {
 		return nombre;
 	}
@@ -54,7 +61,26 @@ public class Alumno {
 	}
 
 
+	public int getEdad() {
+		return edad;
+	}
 
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+
+	@NotNull
+	@Size(min=2,message="Campo requerido de minimo dos letras")
 	private String nombre;
 	
 	private String apellido;
@@ -64,5 +90,12 @@ public class Alumno {
 	private String ciudadEstudios;
 	
 	private String idiomasAlumno;
+	
+	@Min(value=10, message="No se permiten menores de 10 años")
+	@Max(value=100, message="No se permiten mayores de 100 años")
+	private int edad;
+	
+	@Email
+	private String email;
 
 }

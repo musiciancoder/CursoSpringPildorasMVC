@@ -11,10 +11,24 @@
 	<form:form action="procesarFormulario" modelAttribute="elAlumno">
 		<!-- path="nombre" llama a setNombre de la clase alumno  -->
 Nombre:<form:input path="nombre" />
+		<!-- Validacion formularios -->
+		<form:errors path="nombre" />
 		<br>
 		<br>
 		<br>
 Apellido:<form:input path="apellido" />
+		<br>
+		<br>
+		<br>
+Edad:<form:input path="edad" />
+		<!-- Validacion formularios -->
+		<form:errors path="edad" style="color:red" />
+		<br>
+		<br>
+		<br>
+		Edad:<form:input path="email" />
+		<!-- Validacion formularios -->
+		<form:errors path="email" style="color:red" />
 		<br>
 		<br>
 		<br>
